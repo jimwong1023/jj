@@ -1,0 +1,30 @@
+.site_main.eggshell-bg
+  %section.rsvp_content
+    .rsvp_title
+      Wedding Invite
+    %iframe.google_iframe#invite{:src => "https://docs.google.com/forms/d/e/1FAIpQLSf_KxiEPsIRpM3ZGYhToQfleInyj0dhq4EiOphXRYj_OrbzbQ/viewform?embedded=true"} Loading...
+  %section.rsvp_content
+    .rsvp_title{style: "margin-bottom: 20px;"}
+      Event Details
+    .event_container
+      .map_image_wrapper
+        / %img.map_image{src: image_path("map.png")}
+        %iframe{src: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3162.697508083316!2d-122.27901468491535!3d37.562189979798696!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808f9ec60089b45f%3A0x91f82ce69fdbc29a!2sCrowne+Plaza+-+Foster+City+Hotel!5e0!3m2!1sen!2sus!4v1481313552065", width: "600", height: "450",frameborder: "0", style: "border:0"}
+      .details
+        .details_title
+          Crowne Plaza Foster City
+        .details_address
+          %div
+            1221 Chess Drive,
+          %div
+            Foster City, CA 94404
+        .details_info
+          %div
+            Ceremony at 5PM
+          %div{style: "margin-bottom: 10px;"}
+            Dinner and dancing to follow
+          %div{style: "font-size: 13px;"}
+            ★ If you would like to book a room at Crowne Plaza with our reserve rate, let us know!
+
+%script
+  document.getElementById('invite').onload = function(){ setTimeout("document.getElementById('invite').contentWindow.scrollTo(5, 20)", 1) }

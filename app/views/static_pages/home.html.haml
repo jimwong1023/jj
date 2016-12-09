@@ -1,0 +1,14 @@
+.site_main.mint-green-bg
+  .home_content
+    .home_title
+      Jimmy + Juliana
+    .date_title
+      June 10, 2017
+    .password_form
+      .password
+        Password
+      = form_tag("/signin", method: 'post') do
+        %div
+          = text_field_tag :password, nil, class: 'password_input'
+        %div
+          = submit_tag 'Submit', class: 'password_submit'

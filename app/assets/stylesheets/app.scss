@@ -1,0 +1,169 @@
+@font-face {
+  font-family: 'intro rust';
+  src: font-url('introrustg-base2line-webfont.eot');
+  src: font-url('introrustg-base2line-webfont.eot?#iefix') format('embedded-opentype'),
+       font-url('introrustg-base2line-webfont.woff2') format('woff2'),
+       font-url('introrustg-base2line-webfont.woff') format('woff'),
+       font-url('introrustg-base2line-webfont.ttf') format('truetype'),
+       font-url('introrustg-base2line-webfont.svg#intro_rust_gbase_2_line') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'intro base';
+  src: font-url('introheadr-base-webfont.eot');
+  src: font-url('introheadr-base-webfont.eot?#iefix') format('embedded-opentype'),
+       font-url('introheadr-base-webfont.woff2') format('woff2'),
+       font-url('introheadr-base-webfont.woff') format('woff'),
+       font-url('introheadr-base-webfont.ttf') format('truetype'),
+       font-url('introheadr-base-webfont.svg#intro_rust_gbase_2_line') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+html, body {
+  width: 100%;
+  height: 100%
+}
+
+body {
+  margin: 0;
+}
+
+.site_main {
+  min-height: 100%;
+  height: auto !important;
+  height: 100%;
+}
+
+.mint-green-bg {
+  background-color: #abddc6;
+}
+
+.eggshell-bg {
+  background-color: #f7f4e9;
+}
+
+.home_content {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.home_title {
+  font-family: 'intro rust';
+  color: #fff;
+  font-size: 80px;
+  word-wrap: break-word;
+}
+
+.date_title {
+  font-family: 'intro base';
+  font-weight: bold;
+  font-size: 50px;
+  color: #009688;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  vertical-align: middle;
+  text-align: center;
+  background-color: #fff;
+}
+
+.password_form {
+  margin-top: 20px;
+  vertical-align: middle;
+  text-align: center;
+}
+
+.password {
+  font-family: 'intro rust';
+  color: #ff9900;
+  font-size: 30px;
+}
+
+.password_input {
+  color: #838383;
+  font-weight: bold;
+  font-family: 'intro base';
+  font-size: 20px;
+  width: 23%;
+  margin-top: 5px;
+  padding: 3px;
+}
+
+.password_submit {
+  margin-top: 15px;
+  background-color: #ff9900;
+  color: #fff;
+  font-weight: bold;
+  font-family: 'intro rust';
+  font-size: 18px;
+  width: 25%;
+  border-radius: 6px;
+}
+
+.rsvp_content {
+  text-align: center;
+  padding-bottom: 30px;
+}
+
+.rsvp_title {
+  font-family: 'intro rust';
+  color: #009688;
+  font-size: 80px;
+  word-wrap: break-word;
+}
+
+.google_iframe {
+  height: 430px;
+  width: 53%;
+  border-radius: 10px;
+  margin-bottom: 30px;
+}
+
+.event_container {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.map_image_wrapper {
+  width: 47%;
+  display: inline-block;
+}
+
+.map_image {
+  width: 100%;
+  border-radius: 5px;
+}
+
+.details {
+  width: 47%;
+  display: inline-block;
+  vertical-align:top;
+  text-align: left;
+  padding-left: 4%;
+}
+
+.details_title {
+  color: #ff9900;
+  font-family: 'intro base';
+  font-weight: bold;
+  font-size: 50px;
+}
+
+.details_address {
+  color: #009688;
+  font-family: 'intro base';
+  font-weight: bold;
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+.details_info {
+  color: #36454f;
+  font-family: 'intro base';
+  font-size: 30px;
+}
