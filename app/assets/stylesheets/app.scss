@@ -31,6 +31,26 @@ body {
   margin: 0;
 }
 
+.column-15 {
+  width: 14%;
+  display: inline-block;
+  text-align: center;
+}
+
+.column-70 {
+  width: 69%;
+  display: inline-block;
+  text-align: center;
+}
+
+.text-align-right {
+  text-align: right;
+}
+
+.text-align-left {
+  text-align: left;
+}
+
 .site_main {
   min-height: 100%;
   height: auto !important;
@@ -39,6 +59,10 @@ body {
 
 .mint-green-bg {
   background-color: #abddc6;
+}
+
+.white-bg {
+  background-color: #fff;
 }
 
 .eggshell-bg {
@@ -57,7 +81,7 @@ body {
   font-family: 'intro rust';
   color: #fff;
   font-size: 80px;
-  word-wrap: break-word;
+  white-space: nowrap;
 }
 
 .date_title {
@@ -81,15 +105,15 @@ body {
 .password {
   font-family: 'intro rust';
   color: #ff9900;
-  font-size: 30px;
+  font-size: 50px;
 }
 
 .password_input {
   color: #838383;
   font-weight: bold;
   font-family: 'intro base';
-  font-size: 20px;
-  width: 23%;
+  font-size: 40px;
+  width: 35%;
   margin-top: 5px;
   padding: 3px;
 }
@@ -101,7 +125,8 @@ body {
   font-weight: bold;
   font-family: 'intro rust';
   font-size: 18px;
-  width: 25%;
+  width: 35%;
+  height: 45px;
   border-radius: 6px;
 }
 
@@ -115,11 +140,12 @@ body {
   color: #009688;
   font-size: 80px;
   word-wrap: break-word;
+  margin-bottom: 25px;
 }
 
 .google_iframe {
   height: 430px;
-  width: 53%;
+  width: 60%;
   border-radius: 10px;
   margin-bottom: 30px;
 }
@@ -166,4 +192,87 @@ body {
   color: #36454f;
   font-family: 'intro base';
   font-size: 30px;
+}
+
+.google_map {
+  width: 80%;
+  height: 450px;
+  border: 0;
+}
+
+.arrow-right {
+  font-size: 80px;
+  font-weight: bold;
+  color: #fff;
+  font-family: 'intro base';
+  padding-right: 20px;
+  position: relative;
+  top: -80px;
+}
+
+.arrow-left {
+  font-size: 80px;
+  font-weight: bold;
+  color: #fff;
+  padding-left: 20px;
+  font-family: 'intro base';
+  position: relative;
+  top: -80px;
+}
+
+.party {
+  color: #ff9900;
+  font-family: 'intro base';
+  font-weight: bold;
+  font-size: 50px;
+}
+
+.bride_and_groom {
+  .photo {
+    width: 40%;
+    padding: 20px;
+    display: inline-block;
+
+    .us {
+      border-radius: 9px;
+      width: 80%;
+    }
+  }
+
+  .description {
+    width: 40%;
+    padding: 20px;
+    display: inline-block;
+    vertical-align: top;
+    text-align: left;
+    color: #36454f;
+    font-family: 'intro base';
+    font-size: 30px;
+  }
+}
+
+.bridesmaids {
+  .bridemaid_profile {
+    padding: 20px;
+
+    .photo {
+      width: 30%;
+      display: inline-block;
+
+      img {
+        width: 70%;
+        border-radius: 9px;
+      }
+    }
+
+    .bridesmaid_description {
+      width: 65%;
+      display: inline-block;
+      vertical-align: top;
+      text-align: left;
+      color: #36454f;
+      font-family: 'intro base';
+      font-size: 30px;
+    }
+  }
 }

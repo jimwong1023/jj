@@ -3,5 +3,5 @@ Rails.application.routes.draw do
 
   post "/signin", to: 'sessions#create'
 
-  get '/rsvp', to: 'static_pages#rsvp'
+  get '/details', to: 'static_pages#rsvp'
 end
