@@ -273,6 +273,17 @@ body {
       color: #36454f;
       font-family: 'intro base';
       font-size: 30px;
+
+      p {
+        margin-top: 0;
+        font-size: 25px;
+        margin-bottom: 15px;
+
+        span {
+          color: #ff9900;
+          font-weight: bold;
+        }
+      }
     }
   }
 }
