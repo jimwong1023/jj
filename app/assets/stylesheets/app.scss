@@ -178,20 +178,33 @@ body {
   font-family: 'intro base';
   font-weight: bold;
   font-size: 50px;
+  margin-bottom: 10px;
+}
+
+.details_date {
+  color: #36454f;
+  font-family: 'intro base';
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 15px;
 }
 
 .details_address {
   color: #009688;
   font-family: 'intro base';
   font-weight: bold;
-  font-size: 30px;
-  margin-bottom: 10px;
+  font-size: 35px;
+  margin-bottom: 15px;
 }
 
 .details_info {
   color: #36454f;
   font-family: 'intro base';
   font-size: 30px;
+
+  div {
+    margin-bottom: 15px;
+  }
 }
 
 .google_map {
@@ -280,7 +293,7 @@ body {
         margin-bottom: 15px;
 
         span {
-          color: #ff9900;
+          color: #d88100;
           font-weight: bold;
         }
       }
