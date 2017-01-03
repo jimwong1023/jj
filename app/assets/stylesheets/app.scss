@@ -22,6 +22,14 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'beyond';
+  src: font-url('beyond_the_mountains.otf');
+  src: font-url('beyond_the_mountains.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
 html, body {
   width: 100%;
   height: 100%
@@ -58,15 +66,15 @@ body {
 }
 
 .mint-green-bg {
-  background-color: #abddc6;
+  background-color: #FDDBC2;
 }
 
-.white-bg {
-  background-color: #fff;
-}
+// .white-bg {
+//   background-color: #fff;
+// }
 
 .eggshell-bg {
-  background-color: #f7f4e9;
+  background-color: #FBFBFB;
 }
 
 .home_content {
@@ -78,8 +86,8 @@ body {
 }
 
 .home_title {
-  font-family: 'intro rust';
-  color: #fff;
+  font-family: 'beyond';
+  color: #193944;
   font-size: 80px;
   white-space: nowrap;
 }
@@ -88,12 +96,12 @@ body {
   font-family: 'intro base';
   font-weight: bold;
   font-size: 50px;
-  color: #009688;
-  padding-top: 15px;
+  color: #fff;
+  padding-top: 25px;
   padding-bottom: 15px;
   vertical-align: middle;
   text-align: center;
-  background-color: #fff;
+  // background-color: #fff;
 }
 
 .password_form {
@@ -104,12 +112,12 @@ body {
 
 .password {
   font-family: 'intro rust';
-  color: #ff9900;
+  color: #fff;
   font-size: 50px;
 }
 
 .password_input {
-  color: #838383;
+  color: lightgrey;
   font-weight: bold;
   font-family: 'intro base';
   font-size: 40px;
@@ -120,14 +128,17 @@ body {
 
 .password_submit {
   margin-top: 15px;
-  background-color: #ff9900;
+  background-color: #193944;
   color: #fff;
-  font-weight: bold;
-  font-family: 'intro rust';
+  // font-weight: bold;
+  font-family: 'intro base';
+  text-transform: uppercase;
   font-size: 18px;
-  width: 35%;
+  width: 37%;
   height: 45px;
-  border-radius: 6px;
+  border-radius: 2px;
+  border-color: transparent;
+  letter-spacing: .05em;
 }
 
 .rsvp_content {
@@ -136,11 +147,13 @@ body {
 }
 
 .rsvp_title {
-  font-family: 'intro rust';
-  color: #009688;
-  font-size: 80px;
+  font-family: 'beyond';
+  color: #193944;
+  font-size: 50px;
   word-wrap: break-word;
-  margin-bottom: 25px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  letter-spacing: .025em;
 }
 
 .google_iframe {
@@ -153,6 +166,7 @@ body {
 .event_container {
   padding-left: 30px;
   padding-right: 30px;
+  padding-bottom: 50px;
 }
 
 .map_image_wrapper {
@@ -174,27 +188,27 @@ body {
 }
 
 .details_title {
-  color: #ff9900;
+  color: #C0AC6F;
   font-family: 'intro base';
   font-weight: bold;
-  font-size: 50px;
+  font-size: 30px;
   margin-bottom: 10px;
 }
 
 .details_date {
   color: #36454f;
   font-family: 'intro base';
-  font-size: 40px;
+  font-size: 30px;
   font-weight: bold;
   margin-bottom: 15px;
 }
 
 .details_address {
-  color: #009688;
+  color: #36454f;
   font-family: 'intro base';
   font-weight: bold;
-  font-size: 30px;
-  margin-bottom: 15px;
+  font-size: 20px;
+  margin-bottom: 50px;
 }
 
 .details_info {
@@ -234,21 +248,22 @@ body {
 }
 
 .party {
-  color: #ff9900;
-  font-family: 'intro base';
-  font-weight: bold;
+  color: #193944;;
+  font-family: 'beyond';
   font-size: 50px;
+  letter-spacing: .025em;
+  padding-top: 25px;
 }
 
 .bride_and_groom {
   .photo {
-    width: 40%;
-    padding: 20px;
+    width: 70%;
+    // padding: 20px;
     display: inline-block;
 
     .us {
-      border-radius: 9px;
-      width: 80%;
+      border-radius: 5px;
+      width: 100%;
     }
   }
 
@@ -269,27 +284,28 @@ body {
     padding: 20px;
 
     .photo {
-      width: 30%;
+      width: 55%;
       display: inline-block;
 
       img {
-        width: 70%;
-        border-radius: 9px;
+        width: 100%;
+        border-radius: 5px;
       }
     }
 
     .bridesmaid_description {
-      width: 65%;
+      width: 55%;
+      height: 200px;
       display: inline-block;
       vertical-align: top;
       text-align: left;
       color: #36454f;
       font-family: 'intro base';
-      font-size: 30px;
+      font-size: 12px;
 
       p {
         margin-top: 0;
-        font-size: 25px;
+        font-size: 24px;
         margin-bottom: 15px;
 
         span {
@@ -298,5 +314,16 @@ body {
         }
       }
     }
+  }
+}
+@media (max-width: 500px) {
+  .photo {
+    width: 100%;
+  display: block;
+  }
+  .bridesmaid_description {
+      width: 100%;
+      height: 200px;
+      display: block;
   }
 }

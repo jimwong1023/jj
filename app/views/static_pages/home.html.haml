@@ -6,7 +6,7 @@
       June 10, 2017
     .password_form
       .password
-        Password
+        / Password
       = form_tag("/signin", method: 'post') do
         %div
           = text_field_tag :password, nil, class: 'password_input'
