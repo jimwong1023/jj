@@ -24,7 +24,7 @@
 
 html, body {
   width: 100%;
-  height: 100%
+  height: 100%;
 }
 
 body {
@@ -51,6 +51,10 @@ body {
   text-align: left;
 }
 
+.text-align-center {
+  text-align: center;
+}
+
 .site_main {
   min-height: 100%;
   height: auto !important;
@@ -58,15 +62,15 @@ body {
 }
 
 .mint-green-bg {
-  background-color: #abddc6;
+  background-color: #abddc6 !important;
 }
 
 .white-bg {
-  background-color: #fff;
+  background-color: #fff !important;
 }
 
 .eggshell-bg {
-  background-color: #f7f4e9;
+  background-color: #f7f4e9 !important;
 }
 
 .home_content {
@@ -237,27 +241,20 @@ body {
   color: #ff9900;
   font-family: 'intro base';
   font-weight: bold;
-  font-size: 50px;
+  font-size: 70px;
 }
 
 .bride_and_groom {
   .photo {
-    width: 40%;
-    padding: 20px;
-    display: inline-block;
-
     .us {
       border-radius: 9px;
-      width: 80%;
+      width: 40%;
     }
   }
 
   .description {
-    width: 40%;
     padding: 20px;
-    display: inline-block;
     vertical-align: top;
-    text-align: left;
     color: #36454f;
     font-family: 'intro base';
     font-size: 30px;
@@ -299,4 +296,101 @@ body {
       }
     }
   }
+}
+/* Carousel */
+/* Variables */
+
+$easing: cubic-bezier(1,.015,.295,1.225);
+
+/* Cards Icon */
+
+.icon-cards {
+  position: absolute;
+  left: 50%;
+  width: 315px;
+  height: 470px;
+  perspective: 1000px;
+  transform: translate(-50%);
+  
+  /* This rotates with the animation */
+  
+  &__content {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transform: translateZ(-145px) rotateY(0);
+    animation: carousel 20s infinite cubic-bezier(1,.015,.295,1.225) forwards;
+  }
+  
+  /* Individual cards */
+  
+  &__item {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 315px;
+    height: 470px;
+    background: #f7f4e9;
+    opacity: .98;
+    border-radius: 6px;
+    
+    @for $i from 1 to 5 {
+      &:nth-child(#{$i}) {
+        transform: rotateY($i * 90deg) translateZ(250px);
+      }
+    }
+  }
+
+  .groomsmen {
+    background-image: -webkit-linear-gradient(top, #36454f, #36454f 40%, transparent 40%, transparent 100%);
+  }
+
+  .bridesmaids {
+    background-image: -webkit-linear-gradient(top, #ffb6c1, #ffb6c1 40%, transparent 40%, transparent 100%);
+  }
+
+  .photo {
+    margin-top: 30px;
+    width: 70%;
+    display: inline-block;
+
+    img {
+      width: 90%;
+      border-radius: 9px;
+      border-style: solid;
+      border-width: 10px;
+      border-color: white;
+    }
+  }
+
+  .bridesmaid_description {
+    width: 65%;
+    display: inline-block;
+    vertical-align: top;
+    text-align: center;
+    color: #36454f;
+    font-family: 'intro base';
+    font-size: 30px;
+
+    p {
+      margin-top: 0;
+      font-size: 25px;
+      margin-bottom: 7px;
+
+      span {
+        color: #d88100;
+        font-weight: bold;
+      }
+    }
+  }
+}
+
+/* Animation */
+
+@keyframes carousel {
+  0%,  15% { transform: translateZ(-145px) rotateY(0); }
+  25%, 40% { transform: translateZ(-145px) rotateY(-90deg); }
+  50%, 65% { transform: translateZ(-145px) rotateY(-180deg); }
+  75%, 90% { transform: translateZ(-145px) rotateY(-270deg); }
 }

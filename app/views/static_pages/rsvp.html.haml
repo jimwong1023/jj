@@ -32,126 +32,93 @@
   %section.rsvp_content
     .rsvp_title.white-bg
       Wedding Party
-    .bride_and_groom{style: "margin-bottom: 40px;"}
-      .party{style: "margin-bottom: 40px;"}
-        Jimmy + Juliana
-      .photo
-        %img.us{src: image_path('us.jpg')}
-      .description
-        %p{style: "margin-top: 0;"}
-          If you don't know who we are...
-        %p
-          You're in the wrong part of town buddy!
-    .bridesmaids
-      .party{style: "margin-bottom: 40px;"}
+    .text-align-center
+      .bride_and_groom{style: "margin-bottom: 40px;"}
+        .party{style: "margin-bottom: 40px;"}
+          Jimmy + Juliana
+        .photo
+          %img.us{src: image_path('us.jpg')}
+        .description
+          %p{style: "margin-top: 0;"}
+            If you don't know who we are...
+          %p
+            You're in the wrong part of town buddy!
+    .bridesmaids.eggshell-bg
+      .party.white-bg{style: "margin-bottom: 70px; padding: 10px 0 10px 0;"}
         Bridesmaids
-      .bridemaid_profile
-        .photo
-          %img{src: image_path('lillian.png')}
-        .bridesmaid_description
-          %p{style: "font-weight: bold; font-size: 50px;"}
-            Lilian
-          %p
-            Lilian and I have known each other our entire lives. We went to the same schools growing up and have many fond memories to look back on. Lilian is genuine and reliable, and has always been the answer to my password reset question: "What is the name of your childhood best friend?"
-          %p
-            %strong
-              Fun facts about Lilian:
-          %p
-            <strong>1)</strong> She was always the top performing student in our class.
-          %p
-            <strong>2)</strong> She has travelled and lived all over the world. 
-            %span
-              \#inspiring
-      .bridemaid_profile
-        .photo
-          %img{src: image_path('anna.png')}
-        .bridesmaid_description
-          %p{style: "font-weight: bold; font-size: 50px;"}
-            Anna
-          %p
-            Anna and I have been friends since middle school and she, Lilian, and I participated in the same school clubs. Growing up with Anna, she was always the one I could count on to celebrate the good times and cry over the bad. I admire her most for her creative talents and ability to make others happy.
-          %p
-            %strong
-              Fun facts about Anna: 
-          %p
-            <strong>1)</strong> She is a pro at yoga. 
-            %span
-              \#skills
-          %p
-            <strong>2)</strong> She is also an extraordinaire at craft projects, running marathons, and basically everything else.
-      .bridemaid_profile
-        .photo
-          %img{src: image_path('lisa.png')}
-        .bridesmaid_description
-          %p{style: "font-weight: bold; font-size: 50px;"}
-            Lisa
-          %p
-            Lisa and I met during our college years and our relationship ignited and evolved over cheap liquor and budget road trips. I admire Lisa for her humbleness and commitment to her friends. For all the fun and unforgettable events I've partaken, Lisa has always been there to make it so.
-          %p
-            %strong
-              Fun facts about Lisa: 
-          %p
-            <strong>1)</strong> She bought a car for her younger brother before she bought one for herself.
-            %span
-              \#selfless
-          %p
-            <strong>2)</strong> Her dog is Ditto's best friend
-      .bridemaid_profile
-        .photo
-          %img{src: image_path('michelle.png')}
-        .bridesmaid_description
-          %p{style: "font-weight: bold; font-size: 50px;"}
-            Michelle
-          %p
-            I met Michelle during our college years and our relationship blossomed when she became my neighbor. She's an incredibly devoted and dependable friend and has perfect attendance to all get togethers. See below for definition of Michelle Chen:
-          %p
-            %strong
-              Fun facts about Michelle:
-          %p
-            %strong{style: "vertical-align: top;"}
-              1)
-            %img{src: image_path('dictionary.png'), style: "width: 80%; border-radius: 5px; margin-left: 5px;"}
-          %p
-            %strong
-              2)
-            She's travelled to Thailand alone to volunteer at elephant sanctuaries.
-            %span
-              \#loving
+      %div{style: "height: 550px;"}
+        .icon-cards
+          .icon-cards__content
+            .icon-cards__item.bridesmaids.white-bg
+              .photo
+                %img{src: image_path('anna.png')}
+              .bridesmaid_description
+                %p{style: "font-weight: bold; font-size: 50px;"}
+                  Anna
+                %p
+                  Favorite workout buddy who is a pro at yoga, running marathons, and diy crafty projects.
+            .icon-cards__item.bridesmaids.white-bg
+              .photo
+                %img{src: image_path('lisa.png')}
+              .bridesmaid_description
+                %p{style: "font-weight: bold; font-size: 50px;"}
+                  Lisa
+                %p
+                  Music festival and party squad lead who gets people excited to hang out.
+            .icon-cards__item.bridesmaids.white-bg
+              .photo
+                %img{src: image_path('michelle.png')}
+              .bridesmaid_description
+                %p{style: "font-weight: bold; font-size: 50px;"}
+                  Michelle
+                %p
+                  Perfect attendance to get togethers and is my inspiration to travel. Single.
+            .icon-cards__item.bridesmaids.white-bg
+              .photo
+                %img{src: image_path('lillian.png')}
+              .bridesmaid_description
+                %p{style: "font-weight: bold; font-size: 50px;"}
+                  Lilian
+                %p
+                  The answer to my password reset question: "What is the name of your childhood best friend?". Single.
     .bridesmaids
-      .party{style: "margin-bottom: 40px;"}
+      .party.white-bg{style: "margin-bottom: 70px; padding: 10px 0 10px 0;"}
         Groomsmen
-      .bridemaid_profile
-        .photo
-          %img{src: image_path('jonathan.png')}
-        .bridesmaid_description
-          %p{style: "font-weight: bold; font-size: 50px;"}
-            Jonathan
-          %p
-            My brother. I know him long time.
-      .bridemaid_profile
-        .photo
-          %img{src: image_path('johnny.png')}
-        .bridesmaid_description
-          %p{style: "font-weight: bold; font-size: 50px;"}
-            Johnny
-          %p
-            My cousin. I know him long time.
-      .bridemaid_profile
-        .photo
-          %img{src: image_path('danny.png')}
-        .bridesmaid_description
-          %p{style: "font-weight: bold; font-size: 50px;"}
-            Danny
-          %p
-            My cousin. I know him long time.
-      .bridemaid_profile
-        .photo
-          %img{src: image_path('ditto.png')}
-        .bridesmaid_description
-          %p{style: "font-weight: bold; font-size: 50px;"}
-            Ditto
-          %p
-            My dog. I know him long time.
+      %div{style: "height: 550px;"}
+        .icon-cards
+          .icon-cards__content
+            .icon-cards__item.groomsmen
+              .photo
+                %img{src: image_path('johnny.png')}
+              .bridesmaid_description
+                %p{style: "font-weight: bold; font-size: 50px;"}
+                  Johnny
+                %p
+                  My cousin. I know him long time.
+            .icon-cards__item.groomsmen
+              .photo
+                %img{src: image_path('danny.png')}
+              .bridesmaid_description
+                %p{style: "font-weight: bold; font-size: 50px;"}
+                  Danny
+                %p
+                  My cousin. I know him long time.
+            .icon-cards__item.groomsmen
+              .photo
+                %img{src: image_path('ditto.png')}
+              .bridesmaid_description
+                %p{style: "font-weight: bold; font-size: 50px;"}
+                  Ditto
+                %p
+                  My dog. I know him long time.
+            .icon-cards__item.groomsmen
+              .photo
+                %img{src: image_path('jonathan.png')}
+              .bridesmaid_description
+                %p{style: "font-weight: bold; font-size: 50px;"}
+                  Jonathan
+                %p
+                  My brother. I know him long time.
 
 
       
